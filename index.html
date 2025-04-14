@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Yeni</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f1f7fc;
+      color: #1d3d5e;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      color: white;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      z-index: 100;
+    }
+
+    header nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    header nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.1rem;
+      padding: 10px;
+      transition: all 0.3s;
+    }
+
+    header nav a:hover {
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 5px;
+    }
+
+    .hero {
+      height: 100vh;
+      background: url('https://unair.ac.id/wp-content/uploads/2024/06/kampus-C-scaled.webp') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      color: white;
+      text-shadow: 2px 2px 3px black, -2px -2px 3px black, 2px -2px 3px black, -2px 2px 3px black;
+      letter-spacing: 2px;
+      /* Menambahkan jarak antar karakter */
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      font-style: italic;
+      color: white;
+      text-shadow: 2px 2px 3px black, -2px -2px 3px black, 2px -2px 3px black, -2px 2px 3px black;
+      letter-spacing: 1px;
+      /* Menambahkan jarak antar karakter */
+    }
+
+    section {
+      padding: 60px 20px;
+      margin-top: 80px;
+    }
+
+    .profil {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .profil img {
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border: 5px solid #f1f7fc;
+    }
+
+    .profil .info {
+      max-width: 500px;
+      text-align: left;
+    }
+
+    .contact,
+    .skills,
+    .experience,
+    .education {
+      background: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #004aad;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .skills ul {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      list-style: none;
+      padding: 0;
+    }
+
+    .skills ul li {
+      width: 150px;
+      text-align: center;
+      font-size: 1.2rem;
+      margin: 10px;
+      background-color: #f1f7fc;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s;
+    }
+
+    .skills ul li:hover {
+      background-color: #004aad;
+      color: white;
+      transform: scale(1.1);
+    }
+
+    .skills ul li i {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: #004aad;
+    }
+
+    footer {
+      background: #003973;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .profil {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <a href="#profil">Profil</a>
+      <a href="#contact">Contact</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <div>
+      <h1>Portfolio Yeni</h1>
+      <p>Paramedik Veteriner & Admin</p>
+    </div>
+  </div>
+
+  <section id="profil" class="profil">
+    <img src="profile.jpg" alt="Foto Yeni">
+    <div class="info">
+      <h2>Profil</h2>
+      <p>Nama: Yeni</p>
+      <p>Profesi: Paramedik Veteriner dan Admin</p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Email: yeniyen860@gmail.com</p>
+    <p>Telepon: +6285888215800</p>
+    <p>Tanggal Lahir: 08 Februari 1998</p>
+    <p>Alamat: Kabupaten Tuban, Jawa Timur</p>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>
+        <i class="fas fa-paw"></i>
+        <p>Kesehatan Hewan</p>
+      </li>
+      <li>
+        <i class="fas fa-heartbeat"></i>
+        <p>Kontrol Kesehatan Hewan</p>
+      </li>
+      <li>
+        <i class="fas fa-cogs"></i>
+        <p>Manajemen Kesehatan Hewan</p>
+      </li>
+      <li>
+        <i class="fas fa-file-excel"></i>
+        <p>Microsoft Excel</p>
+      </li>
+      <li>
+        <i class="fas fa-file-powerpoint"></i>
+        <p>Microsoft PowerPoint</p>
+      </li>
+      <li>
+        <i class="fas fa-file-word"></i>
+        <p>Microsoft Word</p>
+      </li>
+      <li>
+        <i class="fas fa-paw"></i>
+        <p>Merawat Hewan Peliharaan</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="experience" class="experience">
+    <h2>Work Experience</h2>
+    <h3>Paramedik Veteriner dan Admin - Fluffy Friends</h3>
+    <p>Okt 2023 – Sep 2024 | Full-Time</p>
+    <ul>
+      <li>Membantu dokter hewan dalam melayani pasien.</li>
+      <li>Pengabaran pasien rawat inap, grooming dan pet hotel.</li>
+      <li>Bagian administrasi dan kasir.</li>
+    </ul>
+    <h3>Paramedik Veteriner dan Tim Leader - PT. Rajapet Pasti Sukses</h3>
+    <p>Nov 2019 – Mei 2023 | Full-Time</p>
+    <ul>
+      <li>Membantu Dokter Hewan dalam menangani pasien dan merawat hewan dalam keadaan sehat maupun sakit.</li>
+      <li>Penanggung jawab dalam divisi Pet Hotel.</li>
+      <li>Mengkoordinasi tim untuk menjalankan tugas sesuai jobdesc.</li>
+    </ul>
+  </section>
+
+  <section id="education" class="education">
+    <h2>Education</h2>
+    <p><strong>Universitas Airlangga, Surabaya</strong></p>
+    <p>2016 – 2019 | D3 - Paramedik Veteriner</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Yeni Portfolio. Dibuat dengan ❤️ oleh Yeni.</p>
+  </footer>
+
+</body>
+
+</html>
