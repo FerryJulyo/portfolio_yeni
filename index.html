@@ -862,6 +862,19 @@
 		#gspb_col-id-gsbp-aeeac07 .gspb_iconBox {
 			animation-delay: 2.3s;
 		}
+
+		/* Efek animasi saat muncul */
+		.fade-in-up {
+			opacity: 0;
+			transform: translateY(30px);
+			transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+			will-change: opacity, transform;
+		}
+
+		.fade-in-up.visible {
+			opacity: 1;
+			transform: none;
+		}
 	</style>
 
 	<style id="greenshift-post-css-inline-css">
@@ -3261,3 +3274,21 @@
 </body>
 
 </html>
+<script>
+	document.addEventListener('DOMContentLoaded', function () {
+	  const elements = document.querySelectorAll('.fade-in-up');
+  
+	  const observer = new IntersectionObserver(entries => {
+		entries.forEach(entry => {
+		  if (entry.isIntersecting) {
+			entry.target.classList.add('visible');
+		  }
+		});
+	  }, {
+		threshold: 0.1
+	  });
+  
+	  elements.forEach(el => observer.observe(el));
+	});
+  </script>
+  
